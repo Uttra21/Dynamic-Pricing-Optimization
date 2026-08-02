@@ -7,12 +7,7 @@ The project compares multiple regression algorithms, performs feature engineerin
 ---
 
 # Live Demo
-
-> Add your deployed Streamlit link here after deployment.
-
-Example:
-
-https://your-app.streamlit.app
+https://dynamicpricing-optimization.streamlit.app/
 
 ---
 
