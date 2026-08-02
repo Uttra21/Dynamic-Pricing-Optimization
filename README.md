@@ -23,6 +23,34 @@ Product prices can be influenced by multiple factors such as:
 The objective of this project is to build a **Dynamic Pricing Optimization Engine** that uses machine learning to recommend suitable product prices based on market conditions and historical sales patterns.
 
 ---
+## 🛠️ Technology Stack
+
+### Programming Language
+- Python
+
+### Data Processing
+- Pandas
+- NumPy
+
+### Data Visualization
+- Matplotlib
+- Seaborn
+
+### Machine Learning
+- Scikit-learn
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+### Model Deployment
+- Streamlit
+
+### Model Serialization
+- Joblib
+
+---
+
 
 #  Problem Statement
 
@@ -170,7 +198,7 @@ Measures how well the model explains variation in the target variable.
 | Random Forest Regressor | 181.53 | 0.9427 |
 | Gradient Boosting Regressor | 142.72 | 0.9646 |
 
-Based on evaluation results, **Linear Regression** was selected as the final pricing prediction model.
+Based on the evaluation results, **Linear Regression** was selected as the final pricing prediction model.
 
 ---
 
