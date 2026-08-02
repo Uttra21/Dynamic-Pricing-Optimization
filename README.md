@@ -1,4 +1,4 @@
-# 🚀 Dynamic Pricing Optimization Model
+# Dynamic Pricing Optimization Model
 
 An end-to-end **Machine Learning Dynamic Pricing System** that recommends optimal product prices based on market conditions, competitor pricing, inventory, demand, weather, and seasonal factors.
 
@@ -6,7 +6,7 @@ The project compares multiple regression algorithms, performs feature engineerin
 
 ---
 
-# 🌐 Live Demo
+# Live Demo
 
 > Add your deployed Streamlit link here after deployment.
 
@@ -16,7 +16,7 @@ https://your-app.streamlit.app
 
 ---
 
-# 📖 Project Overview
+# Project Overview
 
 Dynamic pricing is widely used by companies like Amazon, Uber, airlines, and e-commerce platforms to maximize revenue by adjusting prices according to changing market conditions.
 
@@ -24,7 +24,7 @@ This project builds an intelligent pricing engine that predicts the optimal sell
 
 ---
 
-# 🎯 Problem Statement
+# Problem Statement
 
 Businesses often rely on fixed pricing strategies that fail to account for:
 
@@ -41,7 +41,7 @@ This project solves this problem using machine learning.
 
 ---
 
-# ✅ Solution
+# Solution
 
 The application predicts an optimal product price by analyzing:
 
@@ -60,23 +60,23 @@ The best-performing regression model is automatically selected and used for pred
 
 ---
 
-# ✨ Features
+# Features
 
-- 📈 Dynamic Price Prediction
-- 🤖 Multiple Machine Learning Models
-- ⚙️ Automatic Best Model Selection
-- 🔍 GridSearchCV Hyperparameter Tuning
-- 🧠 Feature Engineering
-- 📊 Feature Importance Analysis
-- 🌦 Weather-aware Pricing
-- 📦 Inventory-aware Pricing
-- 📉 Demand-aware Pricing
-- 🎨 Modern Interactive Streamlit Dashboard
-- 💾 Saved ML Pipeline for Production Use
+- Dynamic Price Prediction
+- Multiple Machine Learning Models
+- Automatic Best Model Selection
+- GridSearchCV Hyperparameter Tuning
+- Feature Engineering
+- Feature Importance Analysis
+- Weather-aware Pricing
+- Inventory-aware Pricing
+- Demand-aware Pricing
+- Modern Interactive Streamlit Dashboard
+- Saved ML Pipeline for Production Use
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```
 Dynamic-Pricing-Optimization/
@@ -109,7 +109,7 @@ Dynamic-Pricing-Optimization/
 
 ---
 
-# 📊 Dataset Features
+# Dataset Features
 
 ## Product Features
 
@@ -135,7 +135,7 @@ Dynamic-Pricing-Optimization/
 
 ---
 
-# ⚙️ Feature Engineering
+# Feature Engineering
 
 The following interaction features were created to improve prediction quality:
 
@@ -149,7 +149,7 @@ These engineered features help the model capture more realistic pricing behaviou
 
 ---
 
-# 🤖 Machine Learning Models
+# Machine Learning Models
 
 The project compares multiple regression algorithms.
 
@@ -163,7 +163,7 @@ The best model is selected automatically based on RMSE.
 
 ---
 
-# 📈 Final Model Performance
+# Final Model Performance
 
 | Metric | Score |
 |---------|-------|
@@ -175,7 +175,7 @@ The model explains over **99% of the variance** in the pricing data.
 
 ---
 
-# 🔥 Top Pricing Factors
+# Top Pricing Factors
 
 The trained model identified the following key pricing drivers:
 
@@ -191,7 +191,7 @@ These insights help explain how the model makes pricing decisions.
 
 ---
 
-# 💻 Dashboard Features
+# Dashboard Features
 
 The Streamlit application provides:
 
@@ -231,7 +231,7 @@ The dashboard also displays:
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ### Programming
 
@@ -260,7 +260,7 @@ The dashboard also displays:
 
 ---
 
-# 🚀 Installation
+# Installation
 
 Clone the repository
 
@@ -294,13 +294,13 @@ streamlit run app/app.py
 
 ---
 
-# 📸 Application Preview
+# Application Preview
 <img width="815" height="436" alt="image" src="https://github.com/user-attachments/assets/6b41821a-7ee8-4def-9f2c-7e901becbd33" />
 <img width="685" height="394" alt="image" src="https://github.com/user-attachments/assets/7229b084-9297-4054-8eca-76278f6eb316" />
 
 ---
 
-# 📊 Machine Learning Workflow
+# Machine Learning Workflow
 
 ```
 Dataset
@@ -335,7 +335,7 @@ Streamlit Dashboard
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 - Live Weather API Integration
 - Real-time Competitor Price Scraping
@@ -346,7 +346,7 @@ Streamlit Dashboard
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Uttra Manhas**
 
@@ -358,4 +358,4 @@ GitHub: https://github.com/Uttra21
 
 ---
 
-# ⭐ If you found this project useful, consider giving it a star!
+# If you found this project useful, consider giving it a star!
