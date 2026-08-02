@@ -52,6 +52,10 @@ The final application allows users to enter product and market conditions and re
 
 The project follows an end-to-end machine learning pipeline:
 
+
+with:
+
+```markdown
 ```text
 Raw Superstore Dataset
         ↓
@@ -76,8 +80,6 @@ Best Model Selection
 Model Serialization using Joblib
         ↓
 Streamlit Pricing Application
-'''text
-
 
 ---
 
