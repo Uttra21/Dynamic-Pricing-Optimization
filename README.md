@@ -151,7 +151,7 @@ The following features were created/enhanced:
 
 ### Demand Features
 
-Demand-related features were created to represent customer demand conditions:
+Demand-related features were engineered to simulate customer demand conditions for the dynamic pricing scenario.
 
 - Demand Score
 - Demand Level
@@ -234,8 +234,4 @@ The application provides:
 <img width="416" height="319" alt="image" src="https://github.com/user-attachments/assets/6c489cc2-4d00-4492-a96a-9a1fed83de38" />
 <img width="341" height="331" alt="image" src="https://github.com/user-attachments/assets/124e3b4d-69ba-46c2-8e06-1a0df8c8f274" />
 
-Example:
 
-| Gradient Boosting | 142.72 | 0.9646 |
-
-We'll also be careful to distinguish **engineered/simulated variables** from variables actually present in the original Superstore dataset. That's important if an interviewer asks where competitor price or stock data came from.
