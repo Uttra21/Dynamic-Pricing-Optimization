@@ -1,241 +1,361 @@
-# Dynamic Pricing Optimization Engine
+# 🚀 Dynamic Pricing Optimization Model
 
-A machine learning-based pricing recommendation system that analyzes product, demand, inventory, competitor, and market-related factors to recommend an optimized product price.
+An end-to-end **Machine Learning Dynamic Pricing System** that recommends optimal product prices based on market conditions, competitor pricing, inventory, demand, weather, and seasonal factors.
 
-This project demonstrates an end-to-end machine learning workflow including data exploration, feature engineering, model development, evaluation, model deployment, and an interactive Streamlit application.
+The project compares multiple regression algorithms, performs feature engineering, automatically selects the best-performing model, and provides an interactive **Streamlit dashboard** for real-time pricing recommendations.
 
 ---
-## Live Demo
 
-Try the deployed application here:
+# 🌐 Live Demo
 
-[Dynamic Pricing Optimization Engine](https://dynamicpricing-optimization.streamlit.app/)
-#  Project Objective
+> Add your deployed Streamlit link here after deployment.
 
-Traditional fixed pricing strategies often fail to adapt to changing market conditions.
+Example:
 
-Product prices can be influenced by multiple factors such as:
+https://your-app.streamlit.app
 
-- Customer demand
+---
+
+# 📖 Project Overview
+
+Dynamic pricing is widely used by companies like Amazon, Uber, airlines, and e-commerce platforms to maximize revenue by adjusting prices according to changing market conditions.
+
+This project builds an intelligent pricing engine that predicts the optimal selling price using machine learning and presents recommendations through a modern interactive dashboard.
+
+---
+
+# 🎯 Problem Statement
+
+Businesses often rely on fixed pricing strategies that fail to account for:
+
 - Competitor pricing
-- Inventory availability
-- Product category
-- Discounts
-- Seasonal factors
-- Regional differences
+- Demand fluctuations
+- Inventory levels
+- Seasonal effects
+- Weather conditions
+- Customer purchasing behavior
 
-The objective of this project is to build a **Dynamic Pricing Optimization Engine** that uses machine learning to recommend suitable product prices based on market conditions and historical sales patterns.
+As a result, businesses either lose customers due to overpriced products or lose profit by underpricing them.
 
----
-## Technology Stack
-
-### Programming Language
-- Python
-
-### Data Processing
-- Pandas
-- NumPy
-
-### Data Visualization
-- Matplotlib
-- Seaborn
-
-### Machine Learning
-- Scikit-learn
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-
-### Model Deployment
-- Streamlit
-
-### Model Serialization
-- Joblib
+This project solves this problem using machine learning.
 
 ---
 
+# ✅ Solution
 
-#  Problem Statement
-
-Businesses need pricing strategies that can adapt dynamically instead of relying on manually defined prices.
-
-The challenge is to develop a machine learning system that can analyze product and market-related factors and provide data-driven pricing recommendations.
-
-This project addresses this problem by creating a regression-based ML model that predicts recommended prices using engineered pricing features.
-
----
-
-#  Proposed Solution
-
-The solution consists of:
-
-1. Data analysis and understanding
-2. Feature engineering
-3. Machine learning model training
-4. Model comparison and evaluation
-5. Model deployment using Streamlit
-
-The final application allows users to enter product and market conditions and receive a recommended selling price.
-
----
-
-#  Project Workflow
-
-The project follows an end-to-end machine learning pipeline:
-
-
-with:
-
-```markdown
-Raw Superstore Dataset
-        ↓
-Data Understanding & Exploration
-        ↓
-Data Cleaning
-        ↓
-Feature Engineering
-        ↓
-Pricing & Demand Feature Creation
-        ↓
-Categorical Encoding
-        ↓
-Train-Test Split
-        ↓
-Multiple Regression Models
-        ↓
-Model Evaluation
-        ↓
-Best Model Selection
-        ↓
-Model Serialization using Joblib
-        ↓
-Streamlit Pricing Application
-```
-
-
-#  Dataset
-
-The project uses the **Superstore Sales Dataset** containing historical sales transactions.
-
-The dataset includes information such as:
-
-- Order details
-- Customer information
-- Product categories
-- Regional information
-- Sales
-- Quantity
-- Discount
-- Profit
-
-Additional pricing-related features were engineered to simulate real-world dynamic pricing scenarios.
-
----
-
-# Feature Engineering
-
-The following features were created/enhanced:
-
-### Product Features
-
-- Category
-- Sub-category
-
-### Market Features
+The application predicts an optimal product price by analyzing:
 
 - Competitor Price
 - Stock Level
+- Quantity Purchased
 - Discount
-
-### Time-Based Features
-
-- Holiday indicator
-- Weekend indicator
-
-### Demand Features
-
-Demand-related features were engineered to simulate customer demand conditions for the dynamic pricing scenario.
-
-- Demand Score
+- Weather
+- Holiday
+- Weekend
 - Demand Level
+- Product Category
+- Region
 
-Demand levels were categorized into:
-
-- Low
-- Medium
-- High
+The best-performing regression model is automatically selected and used for prediction.
 
 ---
 
-# Machine Learning Models
+# ✨ Features
 
-Multiple regression models were trained and compared:
-
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-
----
-
-# Model Evaluation
-
-Models were evaluated using:
-
-### RMSE (Root Mean Square Error)
-
-Measures prediction error. Lower values indicate better performance.
-
-### R² Score
-
-Measures how well the model explains variation in the target variable.
+- 📈 Dynamic Price Prediction
+- 🤖 Multiple Machine Learning Models
+- ⚙️ Automatic Best Model Selection
+- 🔍 GridSearchCV Hyperparameter Tuning
+- 🧠 Feature Engineering
+- 📊 Feature Importance Analysis
+- 🌦 Weather-aware Pricing
+- 📦 Inventory-aware Pricing
+- 📉 Demand-aware Pricing
+- 🎨 Modern Interactive Streamlit Dashboard
+- 💾 Saved ML Pipeline for Production Use
 
 ---
 
-## Model Comparison
+# 📂 Project Structure
 
-| Model | RMSE | R² Score |
-|------|------|----------|
-| Linear Regression | 41.10 | 0.9971 |
-| Decision Tree Regressor | 195.91 | 0.9333 |
-| Random Forest Regressor | 181.53 | 0.9427 |
-| Gradient Boosting Regressor | 142.72 | 0.9646 |
-
-Based on the evaluation results, **Linear Regression** was selected as the final pricing prediction model.
+```
+Dynamic-Pricing-Optimization/
+│
+├── app/
+│   └── app.py
+│
+├── data/
+│   └── processed/
+│       └── dynamic_pricing_dataset.csv
+│
+├── models/
+│   ├── dynamic_pricing_pipeline.pkl
+│   ├── model_metrics.pkl
+│   └── feature_importance.pkl
+│
+├── notebooks/
+│   ├── 01_Data_Understanding.ipynb
+│   ├── 02_Feature_Engineering.ipynb
+│   └── 03_Model_Building.ipynb
+│
+├── reports/
+│
+├── src/
+│
+├── train_model.py
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-# Streamlit Application
+# 📊 Dataset Features
 
-The trained model is deployed using Streamlit.
+## Product Features
 
-The application allows users to provide:
+- Category
+- Sub-Category
+- Region
+- Quantity
+
+## Market Features
+
+- Competitor Price
+- Discount
+- Stock Level
+- Weather
+- Holiday
+- Weekend
+- Demand Level
+- Demand Score
+
+## Target Variable
+
+- Recommended Price
+
+---
+
+# ⚙️ Feature Engineering
+
+The following interaction features were created to improve prediction quality:
+
+- Competitor Price × Discount
+- Quantity × Discount
+- Stock Level × Quantity
+- Competitor Price × Holiday
+- Holiday × Weekend
+
+These engineered features help the model capture more realistic pricing behaviour.
+
+---
+
+# 🤖 Machine Learning Models
+
+The project compares multiple regression algorithms.
+
+| Model | Purpose |
+|--------|----------|
+| Linear Regression | Baseline model |
+| Random Forest Regressor | Ensemble learning |
+| Gradient Boosting Regressor | Boosted decision trees |
+
+The best model is selected automatically based on RMSE.
+
+---
+
+# 📈 Final Model Performance
+
+| Metric | Score |
+|---------|-------|
+| Best Model | Linear Regression |
+| R² Score | **0.9964** |
+| RMSE | **24.20** |
+
+The model explains over **99% of the variance** in the pricing data.
+
+---
+
+# 🔥 Top Pricing Factors
+
+The trained model identified the following key pricing drivers:
+
+| Feature | Importance |
+|----------|------------|
+| Competitor Price | **88.29%** |
+| Competitor Price × Discount | **10.95%** |
+| Demand Score | **0.69%** |
+| Demand Level | **0.02%** |
+| Competitor Price × Holiday | **0.01%** |
+
+These insights help explain how the model makes pricing decisions.
+
+---
+
+# 💻 Dashboard Features
+
+The Streamlit application provides:
+
+### Pricing Simulator
+
+Users can configure:
 
 - Product Category
-- Sub Category
+- Product Sub-category
 - Region
 - Quantity
 - Discount
 - Competitor Price
 - Stock Level
-- Holiday Condition
-- Weekend Condition
+- Holiday
+- Weekend
+- Weather
+- Demand Level
 
-The application provides:
+### AI Recommendation
+
+The application predicts:
 
 - Recommended Price
-- Difference from Competitor Price
-- Demand Level Analysis
-- Pricing Recommendation Explanation
-- Model Performance Metrics
+- Price Difference
+- Pricing Strategy
+- Demand Status
+
+### Model Analytics
+
+The dashboard also displays:
+
+- R² Score
+- RMSE
+- Best Model
+- Feature Importance
 
 ---
 
-#  Application Preview
+# 🛠 Tech Stack
 
-<img width="446" height="405" alt="image" src="https://github.com/user-attachments/assets/20972d26-546a-42dc-9a86-c40245feae62" />
-<img width="416" height="319" alt="image" src="https://github.com/user-attachments/assets/6c489cc2-4d00-4492-a96a-9a1fed83de38" />
-<img width="341" height="331" alt="image" src="https://github.com/user-attachments/assets/124e3b4d-69ba-46c2-8e06-1a0df8c8f274" />
+### Programming
 
+- Python
 
+### Data Analysis
+
+- Pandas
+- NumPy
+
+### Machine Learning
+
+- Scikit-Learn
+- GridSearchCV
+- Linear Regression
+- Random Forest
+- Gradient Boosting
+
+### Deployment
+
+- Streamlit
+
+### Model Storage
+
+- Joblib
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Uttra21/Dynamic-Pricing-Optimization.git
+```
+
+Move into the project folder
+
+```bash
+cd Dynamic-Pricing-Optimization
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Train the model
+
+```bash
+python train_model.py
+```
+
+Launch the Streamlit application
+
+```bash
+streamlit run app/app.py
+```
+
+---
+
+# 📸 Application Preview
+<img width="815" height="436" alt="image" src="https://github.com/user-attachments/assets/6b41821a-7ee8-4def-9f2c-7e901becbd33" />
+<img width="685" height="394" alt="image" src="https://github.com/user-attachments/assets/7229b084-9297-4054-8eca-76278f6eb316" />
+
+---
+
+# 📊 Machine Learning Workflow
+
+```
+Dataset
+     │
+     ▼
+Data Cleaning
+     │
+     ▼
+Feature Engineering
+     │
+     ▼
+Train/Test Split
+     │
+     ▼
+Preprocessing
+     │
+     ▼
+Model Training
+     │
+     ▼
+GridSearchCV
+     │
+     ▼
+Model Evaluation
+     │
+     ▼
+Feature Importance
+     │
+     ▼
+Streamlit Dashboard
+```
+
+---
+
+# 🔮 Future Improvements
+
+- Live Weather API Integration
+- Real-time Competitor Price Scraping
+- Time-Series Demand Forecasting
+- Deep Learning Pricing Models
+- Docker Deployment
+- AWS Cloud Deployment
+
+---
+
+# 👨‍💻 Author
+
+**Uttra Manhas**
+
+B.Tech Computer Science & Engineering
+
+Machine Learning • Data Analytics • Artificial Intelligence
+
+GitHub: https://github.com/Uttra21
+
+---
+
+# ⭐ If you found this project useful, consider giving it a star!
