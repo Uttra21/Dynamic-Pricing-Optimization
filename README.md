@@ -5,7 +5,11 @@ A machine learning-based pricing recommendation system that analyzes product, de
 This project demonstrates an end-to-end machine learning workflow including data exploration, feature engineering, model development, evaluation, model deployment, and an interactive Streamlit application.
 
 ---
+## 🚀 Live Demo
 
+Try the deployed application here:
+
+[Dynamic Pricing Optimization Engine](https://dynamicpricing-optimization.streamlit.app/)
 #  Project Objective
 
 Traditional fixed pricing strategies often fail to adapt to changing market conditions.
