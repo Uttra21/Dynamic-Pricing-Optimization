@@ -56,7 +56,6 @@ The project follows an end-to-end machine learning pipeline:
 with:
 
 ```markdown
-```text
 Raw Superstore Dataset
         ↓
 Data Understanding & Exploration
@@ -80,10 +79,10 @@ Best Model Selection
 Model Serialization using Joblib
         ↓
 Streamlit Pricing Application
+```
 
----
 
-# 📂 Dataset
+#  Dataset
 
 The project uses the **Superstore Sales Dataset** containing historical sales transactions.
 
@@ -102,7 +101,7 @@ Additional pricing-related features were engineered to simulate real-world dynam
 
 ---
 
-# ⚙️ Feature Engineering
+# Feature Engineering
 
 The following features were created/enhanced:
 
@@ -137,7 +136,7 @@ Demand levels were categorized into:
 
 ---
 
-# 🤖 Machine Learning Models
+# Machine Learning Models
 
 Multiple regression models were trained and compared:
 
@@ -148,7 +147,7 @@ Multiple regression models were trained and compared:
 
 ---
 
-# 📊 Model Evaluation
+# Model Evaluation
 
 Models were evaluated using:
 
@@ -175,7 +174,7 @@ Based on evaluation results, **Linear Regression** was selected as the final pri
 
 ---
 
-# 🖥️ Streamlit Application
+# Streamlit Application
 
 The trained model is deployed using Streamlit.
 
@@ -201,7 +200,7 @@ The application provides:
 
 ---
 
-# 📸 Application Preview
+#  Application Preview
 
 <img width="446" height="405" alt="image" src="https://github.com/user-attachments/assets/20972d26-546a-42dc-9a86-c40245feae62" />
 <img width="416" height="319" alt="image" src="https://github.com/user-attachments/assets/6c489cc2-4d00-4492-a96a-9a1fed83de38" />
