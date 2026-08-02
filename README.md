@@ -1,4 +1,4 @@
-# 📊 Dynamic Pricing Optimization Engine
+# Dynamic Pricing Optimization Engine
 
 A machine learning-based pricing recommendation system that analyzes product, demand, inventory, competitor, and market-related factors to recommend an optimized product price.
 
@@ -6,7 +6,7 @@ This project demonstrates an end-to-end machine learning workflow including data
 
 ---
 
-# 🎯 Project Objective
+#  Project Objective
 
 Traditional fixed pricing strategies often fail to adapt to changing market conditions.
 
@@ -24,7 +24,7 @@ The objective of this project is to build a **Dynamic Pricing Optimization Engin
 
 ---
 
-# 💡 Problem Statement
+#  Problem Statement
 
 Businesses need pricing strategies that can adapt dynamically instead of relying on manually defined prices.
 
@@ -34,7 +34,7 @@ This project addresses this problem by creating a regression-based ML model that
 
 ---
 
-# 🚀 Proposed Solution
+#  Proposed Solution
 
 The solution consists of:
 
@@ -48,7 +48,7 @@ The final application allows users to enter product and market conditions and re
 
 ---
 
-# 🔄 Project Workflow
+#  Project Workflow
 
 The project follows an end-to-end machine learning pipeline:
 
