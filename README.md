@@ -23,7 +23,7 @@ Product prices can be influenced by multiple factors such as:
 The objective of this project is to build a **Dynamic Pricing Optimization Engine** that uses machine learning to recommend suitable product prices based on market conditions and historical sales patterns.
 
 ---
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Programming Language
 - Python
